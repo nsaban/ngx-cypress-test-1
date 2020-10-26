@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+const { createPartiallyEmittedExpression } = require("typescript");
+
+
+Cypress.Commands.add('openHomePage', () =>{
+  cy.visit("/");
+})
